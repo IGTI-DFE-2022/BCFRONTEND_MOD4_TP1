@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./component.js"></script>
+
+</head>
+
+<body>
+  <template id="clock">
+    <div>
+      <svg width="200" height="200">
+        <circle cx="100" cy="100" r="75" fill="none" stroke="black" stroke-width="2" />
+        <g class="hour">
+          <path stroke="black" stroke-width="4" d="M 100 100 l 0 -35"></path>
+        </g>
+
+        <g class="minute">
+          <path stroke="black" stroke-width="2" d="M 100 100 l 0 -60"></path>
+        </g>
+
+        <g class="second">
+          <path stroke="red" stroke-width="1" d="M 100 100 l 0 -60"></path>
+        </g>
+      </svg>
+    </div>
+  </template>
+
+  <clock-component tipo="analogico"></clock-component>
+</body>
+
+</html>
